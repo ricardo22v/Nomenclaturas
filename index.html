@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nomenclatura CSS</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <h1>Ruta inicial para especializarce en Front End</h2>
+        <br>
+        <h2>Nomenclatura BEM</h2>
+        <!-- Gracias a la metodología BEM podemos estructurar y reutilizar nuestro código haciendo mucho más
+eficiente no solo nuestro trabajo si no el colaborativo con otros desarrolladores -->
+
+        <div>
+            <!-- Primero colocamos nuestro bloque: "es aquel que encapsula nuestros elementos"  -->
+            <ul class="container">
+                <!-- A continuación colocamos nuestros elementos -->
+                <li class="container__list"><a href="">Html</a></li>
+                <li class="container__list"><a href="">Css</a></li>
+                <!-- Y por último el modificador: que hace diferente un elemento del resto -->
+                <li class="container__list list--also"><a href="">Javascript</a></li>
+            </ul>
+        </div>
+
+        <h2>Nomenclatura SUITCSS</h2>
+        <!-- Gracias a la metodología SUITCSS podemos estructurar y reutilizar nuestro código, la principal
+            diferencia es que esta debe estar escrita en Pascal case: es decir primera letra Mayuscula -->
+
+        <!-- Primero colocamos nuestro bloque: "encapsula nuestros elementos y escrito en Pascal case"  -->
+        <ul class="Container">
+            <!-- A continuación colocamos nuestros elementos -->
+            <li class="Container-list"><a href="">Html</a></li>
+            <li class="Container-list"><a href="">Css</a></li>
+            <!-- Y por último el modificador: que hace diferente un elemento del resto
+            colocar la primera letra mayuscula del modificador -->
+            <li class="Container-list Container-list--also"><a href="">Javascript</a></li>
+        </ul>
+
+        <h3>Nomenclatura SMACSS</h3>
+        <!-- Gracias a la metodología SMACSS podemos estructurar nuestro código facilmente, se basa
+        en 5 carpetas bases en la que existe una jerarquía y el orden es importante, suele usar $variables -->
+
+        <!-- "Una vez creada nuestras 5 carpetas, comenzamos con el layout que es en donde van las partes grandes
+            como los articles, section, etc"  -->
+        <section class="cursos">
+            <!-- Ahora colocamos las variables $abc, en la carpeta theme -->
+            <!-- Seguidamente en la carpeta module, colocamos los componentes, en este caso button-->
+            <!-- Seguidamente en la carpeta base, se coloca las variables anteriormente establecidas en theme -->
+            <button class="cursos-item">Html</button>   
+            <p>El primer curso básico: lenguaje de marcado</p>
+            <button class="cursos-item">Css</button>
+            <p>El segundo curso: hojas de estilo</p>
+            <button class="cursos-item">Javascript</button>
+            <p>El tercer curso: Lenguaje de programación</p>
+        </section>
+
+
+</body>
+
+</html>
