@@ -1,0 +1,58 @@
+/* SMACSS */
+@import './smacss/theme/theme';
+@import './smacss/base/base';
+@import './smacss/layout/layout';
+@import './smacss/modules/modules';
+@import './smacss/state/state';
+
+/* BEM */
+.container {
+    background-color: salmon;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.container__list {
+    border-radius: 10px;
+    background-color: yellow;
+    list-style: none;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+
+.list--also {
+    background-color: aqua;
+}
+
+
+/* SUITCSS */
+
+.Container {
+    background-color: rgb(113, 42, 227);
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.Container-list {
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    list-style: none;
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+    padding: 10px;
+}   
+
+.Container-list--also {
+    background-color: rgb(86, 255, 134);
+}
+
+
+
+
+
